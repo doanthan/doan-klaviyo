@@ -1,5 +1,5 @@
-import axios from 'axios';
-import { validateEmail } from '../../helper/functions';
+import axios from "axios";
+import { validateEmail } from "helper/functions";
 
 export default async function identifyProfile(req, res) {
   let identifier = req.body.identifier;
@@ -21,6 +21,6 @@ export default async function identifyProfile(req, res) {
     return res.status(200).send(data);
   } catch (error) {
     console.log(error);
-    return res.status(200).send('Invalid');
+    return res.status(200).send("Invalid");
   }
 }
