@@ -14,7 +14,7 @@ const ItemPage = () => {
 
   const item = ITEM_LIST.find((item) => item.ProductID === id);
 
-  return <>{item && <Item item={item} />}</>;
+  return <></>;
 };
 
 export default ItemPage;
