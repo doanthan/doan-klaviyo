@@ -12,11 +12,7 @@ const ItemPage = () => {
 
   const item = ITEM_LIST.find((item) => item.ProductID === id);
 
-  return (
-    <>
-      <Item item={item} />
-    </>
-  );
+  return <Item item={item} />;
 };
 
 export default ItemPage;
