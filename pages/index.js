@@ -50,11 +50,13 @@ export default function Home() {
             return (
               <Col key={item.ProductID}>
                 <div className="card box-shadow">
-                  <img
-                    src={`/images/${item.img}.jpeg`}
-                    className="card-img-top"
-                    alt="..."
-                  />
+                  {item && (
+                    <img
+                      src={`/images/${item.img}.jpeg`}
+                      className="card-img-top"
+                      alt="..."
+                    />
+                  )}
                   <div className="card-body">
                     <h5 className="card-title">Buy this {item.ProductName}</h5>
                     <strong>{item.ProductName}</strong>
