@@ -18,7 +18,7 @@ const ItemPage = ({ item }) => {
         <Col sm="3" className="pt-5 pl-5">
           <Card className=" box-shadow">
             <img
-              src={`/images/${item.img}.jpeg`}
+              src={`/images/${item?.img}.jpeg`}
               className="card-img-top"
               alt="..."
             />
