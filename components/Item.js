@@ -24,10 +24,10 @@ const ItemPage = ({ item }) => {
             />
             <div className="card-body">
               <CardTitle className="card-title">
-                Buy this {item.ProductName}
+                Buy this {item?.ProductName}
               </CardTitle>
-              <strong>{item.ProductName}</strong>
-              <p className="card-text mt-20">{item.Description}</p>
+              <strong>{item?.ProductName}</strong>
+              <p className="card-text mt-20">{item?.Description}</p>
             </div>
             <Button
               onClick={() => {
