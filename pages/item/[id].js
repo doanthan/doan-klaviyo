@@ -7,12 +7,6 @@ import { ITEM_LIST } from "data/items";
 
 import Item from "components/Item";
 
-export const getServerSideProps = async () => {
-  return {
-    props: {},
-  };
-};
-
 const ItemPage = () => {
   const router = useRouter();
   const { id } = router.query;
@@ -20,7 +14,7 @@ const ItemPage = () => {
 
   const item = ITEM_LIST.find((item) => item.ProductID === id);
 
-  return <Item item={item} />;
+  return <></>;
 };
 
 export default ItemPage;
